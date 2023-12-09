@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./styles//global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TMDB</title>
+  </head>
+  <body>
+    <div class="toast-container" style="position: relative">
+      <div class="toast-body toast show" role="alert"></div>
+    </div>
+    <div class="app">
+      <div class="main-header">
+        <!-- max view header -->
+        <div class="container d-lg-block d-none big-header">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <a href="/" class="main-header-logo">
+                <img src="./assets/icons/header_logo.svg" alt="logo" />
+              </a>
+              <a href="/movies.html" class="nav-button">Movies</a>
+              <a href="/tvs.html" class="nav-button">TV Shows </a>
+              <a href="/people.html" class="nav-button">People</a>
+            </div>
+
+            <div class="unauth d-none align-items-center">
+              <a href="/login.html" class="nav-button">Login</a>
+              <a href="/signup.html" class="nav-button">Join TMDB</a>
+              <a type="button" class="nav-button search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-lg"
+                  style="color: rgb(1, 180, 228)"
+                ></i>
+              </a>
+            </div>
+
+            <div class="auth d-flex align-items-center">
+              <div class="action-button">
+                <div class="nav-button name-container"></div>
+                <div class="action-popup">
+                  <a type="button" class="logout-btn">Log out</a>
+                </div>
+              </div>
+
+              <a type="button" class="nav-button search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-lg"
+                  style="color: rgb(1, 180, 228)"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- mobile header -->
+        <div class="container-fluid d-lg-none position-relative mobile-header">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="col-2 align-items-center">
+              <a type="button" class="nav-button search-button bars">
+                <i class="fa-solid fa-bars fa-lg" style="color: #ffffff"></i>
+              </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <a href="/" class="main-header-logo_mobile">
+                <img src="./assets/icons/footer_logo.svg" alt="logo" />
+              </a>
+            </div>
+
+            <div
+              class="unauth col-2 d-flex align-items-center justify-content-end"
+              style="position: relative"
+            >
+              <div class="action-button">
+                <a type="button" class="nav-button search-button">
+                  <i
+                    class="fa-solid fa-user fa-lg test"
+                    style="color: #ffffff"
+                  ></i>
+                </a>
+                <div class="action-popup">
+                  <a href="/login.html" class="">Sign in</a>
+                  <a href="/signup.html" class="">Register</a>
+                </div>
+              </div>
+              <a type="button" class="nav-button search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-lg"
+                  style="color: rgb(1, 180, 228)"
+                ></i>
+              </a>
+            </div>
+
+            <div
+              class="auth col-2 d-none align-items-center justify-content-end"
+              style="position: relative"
+            >
+              <div class="action-button">
+                <a type="button" class="nav-button search-button">
+                  <i
+                    class="fa-solid fa-user fa-lg test"
+                    style="color: #ffffff"
+                  ></i>
+                </a>
+                <div class="action-popup">
+                  <a type="button" class="logout-btn">Log out</a>
+                </div>
+              </div>
+              <a type="button" class="nav-button search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-lg"
+                  style="color: rgb(1, 180, 228)"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-nav-sidebar d-lg-none">
+          <ul>
+            <li>
+              <a href="/movies.html" class="nav-button">Movies</a>
+            </li>
+            <li>
+              <a href="/tvs.html" class="nav-button">TV Shows</a>
+            </li>
+            <li>
+              <a href="/people.html" class="nav-button">People</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="" style="margin: 50px 0">
+        <div class="container-lg no-padding" style="min-height: 100vh">
+          <div class="content_wrapper people-page">
+            <div class="title" style="margin-inline-start: 30px">People</div>
+            <div class="container-fluid">
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="main-footer">
+        <div class="container-lg no-padding">
+          <div
+            class="nav d-flex flex-lg-row flex-column justify-content-lg-center"
+            style="gap: 40px"
+          >
+            <div class="d-flex flex-column" style="gap: 20px">
+              <div class="footer-logo-container">
+                <img src="./assets/icons/footer_logo.svg" alt="footer logo" />
+              </div>
+              <a href="/signup.html" class="footer-join-btn">
+                <button type="button" class="btn">JOIN THE COMMUNITY</button>
+              </a>
+            </div>
+            <div>
+              <h3>The Basics</h3>
+              <ul>
+                <li><a href="/about?language=vi">About về TMDB</a></li>
+                <li>
+                  <a href="/about/staying-in-touch?language=vi">Contact Us</a>
+                </li>
+                <li><a href="/talk?language=vi">Support Forums</a></li>
+                <li>
+                  <a
+                    href="https://developer.themoviedb.org/docs"
+                    target="_blank"
+                    >API</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://status.themoviedb.org/"
+                    target="_blank"
+                    rel="noopener"
+                    >System Status</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Get Involved</h3>
+              <ul>
+                <li>
+                  <a href="/bible?language=vi"
+                    ><span class="glyphicons glyphicons-asterisk"></span>
+                    Contribution Bible</a
+                  >
+                </li>
+                <li><a href="/movie/new?language=vi">Add New Movie</a></li>
+                <li><a href="/tv/new?language=vi">Add New TV Show</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Community</h3>
+              <ul>
+                <li>
+                  <a href="/documentation/community/guidelines?language=vi"
+                    >Guidelines</a
+                  >
+                </li>
+                <li><a href="/discuss?language=vi">Discussions</a></li>
+                <li><a href="/leaderboard?language=vi">Leaderboard</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Legal</h3>
+              <ul>
+                <li><a href="/terms-of-use?language=vi">Terms of Use</a></li>
+                <li>
+                  <a href="/api-terms-of-use?language=vi">API Terms of Use</a>
+                </li>
+                <li>
+                  <a href="/privacy-policy?language=vi">Privacy Policy</a>
+                </li>
+                <li><a href="/dmca-policy?language=vi">DMCA Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/people.js"></script>
+</html>
